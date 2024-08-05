@@ -1,0 +1,351 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 30px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+
+.list-container {
+  display: flex;
+  align-items: center;
+}
+
+.list-container ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 250px;
+  margin: auto 0;
+}
+
+@media screen and (max-width: 650px) {
+  nav section img {
+    height: 35px;
+  }
+}
+
+.section-container {
+  display: flex;
+  align-items: center;
+  padding: 10px 90px;
+  margin-top: 200px;
+  font-size: 19px;
+}
+
+.art-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.art-1 form {
+  display: flex;
+  height: 50px;
+}
+
+article {
+  height: 400px;
+  margin-top: -90px;
+}
+
+article * {
+  margin: 8px 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.img-container img {
+  width: 70%;
+}
+
+form input {
+  width: 250px;
+  padding: 4px;
+  margin-right: 10px;
+}
+
+form button {
+  width: 140px;
+  border-radius: 3px;
+  background-color: rgb(40, 40, 245);
+  padding: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.se-2 {
+  background-color: rgba(210, 189, 238, 0.111);
+  padding-bottom: 100px;
+}
+.bg-curve {
+  background-image: url("./images/bg-curve-desktop.svg");
+  background-size: cover;
+  margin-bottom: -200px;
+  height: 100px;
+}
+
+@media screen and (max-width: 900px) {
+  .section-container {
+    flex-wrap: wrap-reverse;
+    padding: 10px 50px;
+  }
+
+  article {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+  }
+  form {
+    flex-direction: column;
+  }
+
+  .art-1 form * {
+    padding: 8px;
+  }
+
+  form button {
+    width: 97%;
+  }
+
+  .art-2 {
+    text-align: start;
+  }
+}
+
+.art-2 {
+  margin-top: 200px;
+}
+
+article a {
+  text-decoration: none;
+  display: flex;
+}
+
+.span-link {
+  display: inline;
+  color: green;
+  padding: 10px;
+  border-bottom: 1px solid green;
+}
+
+.icon2 {
+  color: green;
+  padding: 5px;
+  border-bottom: 1px solid green;
+}
+.testimonial {
+  box-shadow: 0 0 5px rgb(214, 214, 214);
+  width: 350px;
+  border-radius: 8px;
+  padding: 20px 50px;
+  background-color: white;
+}
+
+.testimonial div {
+  display: flex;
+  align-items: center;
+}
+
+h6 {
+  padding-left: 15px;
+}
+
+.testimonial div img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+h6 span {
+  display: block;
+  color: gray;
+  font-size: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+  .bg-curve {
+    background-image: url("./images/bg-curve-mobile.svg");
+    background-position: center;
+    background-size: cover;
+    margin-bottom: -200px;
+    height: 100px;
+  }
+
+  .se-2 {
+    height: 1300px;
+  }
+}
+
+.access-section {
+  display: flex;
+  color: white;
+  background-color: rgb(110, 89, 142);
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h2 {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+.access-section div {
+  width: 50%;
+  padding: 100px 40px;
+}
+
+.access-section div p {
+  padding-right: 70px;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-container form {
+  height: 60px;
+}
+.form-container form input {
+  width: 450px;
+  padding: 8px;
+}
+
+.form-container form button {
+  width: 180px;
+  display: block;
+  border-radius: 3px;
+  background-color: rgb(40, 40, 245);
+  padding: 9px;
+  color: white;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .access-section {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .access-section div {
+    padding: 40px 0;
+  }
+
+  .form-container form {
+    margin: 0 auto;
+  }
+
+  .access-section div p {
+    padding: 0;
+  }
+
+  .form-container form input {
+    width: 250px;
+  }
+
+  .form-container {
+    padding-top: 0;
+  }
+  .form-container form button {
+    width: 96%;
+  }
+}
+
+.parent {
+  margin-top: 200px;
+}
+
+footer {
+  display: flex;
+  color: white;
+  background-color: rgb(41, 41, 95);
+  flex-wrap: wrap;
+  padding: 100px 50px;
+}
+
+footer section {
+  width: 350px;
+}
+
+.se-1-footer img {
+  padding: 10px;
+}
+
+.se-1-footer div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.se-1-footer div p {
+  margin: auto 0;
+}
+
+.se-2-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+footer section a {
+  text-decoration: none;
+  padding-bottom: 8px;
+  color: white;
+}
+
+.icons {
+  display: flex;
+  margin-top: 50px;
+  font-size: 30px;
+}
+
+.icons i {
+  margin-right: 10px;
+}
+
+.se-1-footer {
+  margin-top: -30px;
+}
+
+@media screen and (max-width: 900px) {
+  .se-2-footer {
+    align-items: start;
+  }
+
+  .icons {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .icons i {
+    margin-right: 10px;
+  }
+
+  .se-4-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+}
